@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>IT-PAPA</title>
+		<link rel="stylesheet" type="text/css" href="css/it-papa.css">
+		 <script type="text/javascript" src="css/jquery-3.6.0.min.js"></script>
+         <script>
+		 
+	$(window).on("scroll", function(){
+		if ($(window).scrollTop() > 10){
+		$('#message').addClass("show");
+		}
+		else {
+		$('#message').removeClass('show');
+		}
+		});
+		
+   var slideIndex = 1;
+   document.addEventListener('DOMContentLoaded', function () {
+  showSlides(slideIndex);
+});
+
+let timer = setInterval(function(){
+  slideIndex++;
+  showSlides(slideIndex);
+}, 7000);
+
+
+function plusSlide() {
+  showSlides(slideIndex += 1);
+
+}
+
+function minusSlide() {
+  showSlides(slideIndex -= 1);  
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("parag");
+  var dots = document.getElementsByClassName("noguma-pomoki-kadra");
+  if (n > slides.length) {
+  slideIndex = 1
+  }
+  if (n < 1) {
+  slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace("deystvuyus", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " deystvuyus";
+}
+
+</script>
+	</head>
+	<body id="top">
+		<div class="header">
+            <div class="logo_it_papa">
+                <a href=""><img class="image logo"src="image/logo.png"></a>
+            </div>
+                <ul class="spisok spisok_header">
+                    <li class="label_header label1_spisok_header"><a href="catalog.html" target="_blank">Каталог</a></li>
+                    <li class="label_header label2_spisok_header"><a href="#otzivi">Отзывы</a></li>
+                    <li class="label_header label3_spisok_header"><a href="#" target="_blank">Поддержка</a></li>
+                </ul>
+		</div>
+        <div class="wrapper">
+            <div class="block_main main">
+                <div class="blok blok1_main">
+                    <div class="text_block1_main">
+                    <h1>Главная</h1>
+                    <p>IT-PAPA - это лайки, подписчики и репосты!
+                    Давайте раскрутим ваш проект на шикарное
+                    будущее ВМЕСТЕ!</p>
+                    </div>
+                </div>
+                <div class="blok blok2_main">
+                    <img class="image_main" src="image/main_image.png">
+                </div>
+            </div>
+            <div class="block_main main2">
+                <div class="block1_main2">
+                    <img class="image_main2" src="image/main2_image.png">
+                </div>
+                <div class="block2_main2">
+                    <h1 class="h1_main2">Почему именно мы?</h1>
+                    <p class="p_main2">Мы предоставляем развитие как для начинающего проекта, так и для высокоориентированного бизнеса. Качественные и активные подписчики с промежуточной гарантией дадут вам надежду в завтрашний день и возможность стать популяными в мировой паутине уже сегодня!</p>
+                </div>
+            </div>
+            <div class="block_main main3">
+                <div class="block1_main3">
+                    <h1 class="h1_main3">Большой выбор</h1>
+                </div>
+                <div class="bloki23_main_for_flex">
+                    <div class="bloki23_main3 block2_main3">
+                        <ul class="ul_main3">
+                            <li>Развивайте свои группы в социальных сетях, таких как <span class="blue"><strong>Вконтакте</strong></span>, <span class="orange"><strong>Одноклассники</strong></span> или <span class="blue"><strong>Facebook</strong></span>!
+                            </li>
+                            <li>Делайте чаты в <span class="green"><strong>WhatsApp</strong></span> или <span class="blue"><strong>Telegram</strong></span> популярнее, общайтесь в широком обществе!</li>
+                            <li>Набирайте аудиторию в <span class="red"><strong>YouTube</strong></span> или <span class="purple"><strong>Twitch</strong></span>, становитесь известнее!</li>
+                        </ul>
+                        <p class="p_main3">Все товары можно посмотреть в <a href="catalog.html" target="_blank"><span class="blue">Каталоге</span></a></p>
+                    </div>
+                    <div class=" bloki23_main3 block3_main3">
+                        <img class="image_main3" src="image/main3_image.png">
+                    </div>
+                </div>
+                </div>
+             <div class="block_main main4">
+                 <div class="block1_main4">
+                <h1 class="h1_main4" id="otzivi">Отзывы о нашей работе</h1>
+                     <div class="text_p">
+                    <p class="p_text_main4">Перед вам представлены отзывы людей, которые сделали заказ и решили поделиться 
+                     своим успешным опытом! Чтобы ваш отзыв
+                        отображался на нашем сайте, то вам необоходимо отправить
+                     ваше имя и мнение о сайте на почту IT-PAPA@gmail.com или написать в <a href="#" target="_blank"><span class="purple">поддержку сайта</span></a>.</p>
+                     </div>
+                </div>
+                 
+                
+            </div>
+			
+        </div>
+		<div class="footer">
+			<div class="bloki_footer block1_footer">
+				<ul class="ul_block1_footer">
+					<li>© 2022 IT-PAPA.ru</li>
+					<li><a href="#" target="_blank">Политика конфденциальности</a></li>
+					<li><a href="#" target="_blank">Публичная Оферта</a></li>
+				</ul>
+			</div>
+			<div class="bloki_footer block2_footer">
+				<a href="#" target="_blank"><img class="img_footer" src="image/vk.png"></a>
+				<a href="#" target="_blank"> <img class="img_footer" src="image/inst.png"></a>
+				<a href="#" target="_blank"><img class="img_footer" src="image/tg.png"></a>
+				<a href="#" target="_blank"><img class="img_footer" src="image/you.png"></a>
+			</div>
+		</div>
+			<div id="message"><a href="#top">Вверх</a></div>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Каталог</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/catalog.css">
+		<script type="text/javascript" src="css/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(window).on("scroll", function(){
+		if ($(window).scrollTop() > 10){
+		$('#message').addClass("show");
+		}
+		else {
+		$('#message').removeClass('show');
+		}
+		});
+</script>
+
+	</head>
+	<body id="top">
+		<div class="header">
+            <div class="logo_it_papa">
+                <a href=""><img class="image logo"src="image/logo.png"></a>
+            </div>
+                <ul class="spisok spisok_header">
+                    <li class="label_header label1_spisok_header"><a href="catalog.html" target="_blank">Каталог</a></li>
+                    <li class="label_header label2_spisok_header"><a href="#otzivi">Отзывы</a></li>
+                    <li class="label_header label3_spisok_header"><a href="#" target="_blank">Поддержка</a></li>
+                </ul>
+		</div>
+	
+<div id="message"><a href="#top" title="Наверх">^</a></div>
+
+	</body>
+</html>
